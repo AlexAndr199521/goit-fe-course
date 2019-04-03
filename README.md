@@ -1,2 +1,2 @@
-# goit-fe-course.github.io
-goit-fe-course
+# goit-fe-course
+Oleksandr Androshchuk
