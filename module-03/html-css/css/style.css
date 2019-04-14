@@ -1,4 +1,16 @@
 *{font-family: 'Playfair Display Regular', serif;}
+/* очищение геометрии */
+html{box-sizing: border-box;}
+*, *::before, ::after{box-sizing: inherit;}
+.container{
+    width: 901px;
+    margin: 0 auto;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 body{
     background-image: url(../img/Livello7.png)
 }
@@ -8,38 +20,65 @@ header, body{
     color:#626262;
 }
 
-ul li{
-    list-style-type: none;
-    font-size: 14px; 
-    text-transform: uppercase;	
-    display: inline-block;
-    padding: 77px 87px 73px;
-    line-height: 24px;
+header{
+    padding-top: 77px;
+    padding-bottom: 102px;
 }
-a{
+ul{
+    font-size: 0px;
+}
+li a{
+    font-size: 14px; 
+    display: block;
+    line-height: 24px;
+    text-transform: uppercase;
     text-decoration: none;
     text-align: center;
 }
-a:visited,:active{
+ul li{
+    display: inline-block;
+    list-style-type: none;	
+}
+.menu li:not(:last-child){
+    padding-right: 124px;
+}
+a:visited{
     color: #626262;
 }
-a:hover{
-    text-decoration-style: solid;
+a:hover, button:hover,
+a:focus, button:focus{
     color: #9addfb;
     text-align: center;
+}
+.menu{
+    margin: 0px;
+    padding: 0px;
 }
 .row{
     width: 100%;
 }
 .box{
     height: 611px;
-    width: 421px;
+    width: 420px;
     text-align: justify;
-    padding: 0px 75px 60px;
-    
+    margin-right: 60px;
 }
-.row .box{
+.row,.box{
+    padding: 0px;
     display: inline-block;
+    font-size: 0px;
+}
+p{
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0px;
+}
+h2{
+    font-size: 30px;
+}
+
+.row .box:nth-child(2n){
+    margin-right: 0px;
 }
 .underimg{
     font-family: 'Ubuntu Lite', serif;
@@ -48,16 +87,17 @@ a:hover{
     height: 25px;
     width: 407px;
     padding: 30px 0px 15px;
+    font-size: 14px;
 }
 .button1 {
     display: inline-block;
-    color:black;
+    color: #626262;
     font-size: 24px;
     font-weight: 700;
     text-decoration: none;
     text-align: center;
     user-select: none;
-    padding: .5em 2em;
+    padding: 23px 48px;
     outline: none;
     border: 2px solid;
     border-radius: 1px;
@@ -66,9 +106,6 @@ a:hover{
     background-repeat:no-repeat;
     cursor:pointer;
     overflow: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 } 
-.button1:hover { 
-    background: transparent;
-    color: #9addfb; }
 
