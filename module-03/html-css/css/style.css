@@ -5,6 +5,7 @@ html{box-sizing: border-box;}
 .container{
     width: 901px;
     margin: 0 auto;
+    font-size: 0px;
 }
 img{
     display: block;
@@ -15,7 +16,6 @@ body{
     background-image: url(../img/Livello7.png)
 }
 header, body{
-    width: 100%;
     text-align: center;
     color:#626262;
 }
@@ -24,9 +24,7 @@ header{
     padding-top: 77px;
     padding-bottom: 102px;
 }
-ul{
-    font-size: 0px;
-}
+
 li a{
     font-size: 14px; 
     display: block;
@@ -54,19 +52,18 @@ a:focus, button:focus{
     margin: 0px;
     padding: 0px;
 }
-.row{
-    width: 100%;
-}
-.box{
-    height: 611px;
+
+.box,.lastbox{
     width: 420px;
     text-align: justify;
     margin-right: 60px;
-}
-.row,.box{
+    margin-bottom: 135px;
     padding: 0px;
     display: inline-block;
     font-size: 0px;
+}
+.lastbox{
+    margin-bottom: 57px;
 }
 p{
     font-size: 14px;
@@ -75,25 +72,25 @@ p{
 }
 h2{
     font-size: 30px;
+    margin: 0px;
+    margin-bottom: 42px;
 }
-
-.row .box:nth-child(2n){
+.box:nth-child(2n),
+.lastbox:nth-child(2n){
     margin-right: 0px;
 }
 .underimg{
     font-family: 'Ubuntu Lite', serif;
     text-transform: uppercase;
     color: #b4ad9e;
-    height: 25px;
-    width: 407px;
-    padding: 30px 0px 15px;
     font-size: 14px;
+    margin-bottom: 34px;
 }
 .button1 {
     display: inline-block;
     color: #626262;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 700px;
     text-decoration: none;
     text-align: center;
     user-select: none;
@@ -106,6 +103,9 @@ h2{
     background-repeat:no-repeat;
     cursor:pointer;
     overflow: hidden;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
 } 
 
+.image{
+    margin-bottom: 31px;
+}
