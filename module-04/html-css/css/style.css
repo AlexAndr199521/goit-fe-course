@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700|Roboto:300,900&subset=cyrillic");
+.wrapper {
+font-family: "Roboto", sans-serif;
+width: 1110px;
+height: 1723px;
+margin: auto;
+padding-top: 36px;
+}
+header {
+/* не правильно! */
+height: 27px;
+overflow: hidden; 
+}
+.logo,
+a,
+.menu_list > li {
+float: left;
+text-transform: uppercase;
+text-decoration: none;
+display: block;
+}
+/* Color link */
+.menu_list > li > a {
+color: #0f0101;
+}
+.menu_list > li > a:focus {
+color: #1abc9c;
+}
+.menu_list > li > a:hover {
+color: #1abc9c;
+}
+.logo {
+font-size: 30px;
+line-height: 32px;
+color: #555252;
+letter-spacing: 0.02em;
+}
+.logo::first-letter {
+font-weight: bold;
+color: #1abc9c;
+}
+.menu_list {
+padding-top: 8px;
+padding-left: 0px;
+letter-spacing: 0.02em;
+list-style-type: none;
+overflow: hidden;
+float: right;
+font-size: 14px;
+line-height: 11px;
+font-family: "Open Sans", sans-serif;
+}
+.menu_list > li {
+padding-right: 30px;
+}
+.clearfix::after {
+content: "";
+clear: both;
+}
+
+ul,
+p {
+margin: 0px;
+}
+
+.section_title {
+width: 478px;
+font-size: 48px;
+line-height: 32px;
+letter-spacing: 0.02em;
+font-family: "Roboto Black";
+text-transform: uppercase;
+color: rgb(81, 81, 81);
+text-align: center;
+margin: 0 auto;
+padding-top: 106px;
+overflow: hidden;
+}
+
+h5{
+    margin: 0px;
+    padding-bottom: 32px;
+}
+.bog h5{
+    padding: 0px;
+}
+/* line */
+.section_title::after{
+    content: "";
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+    float: left;
+    margin: 0 150px;
+}
+.bog>.section_title{
+width: 350px;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0.02em;
+font-family: "Open Sans Semibold";
+text-transform: initial;
+color: #555252;
+text-align: justify;
+margin: 0 auto;
+padding-top: 15px;
+overflow: hidden;
+}
+.bog>.section_title::after{
+    content: "";
+    width: 136px;
+    height: 3px;
+    background-color: #1abc9c;
+    float: left;
+    margin: 15px 0px 29px;
+}
+/* gallery */
+.item{
+    width: 255px;
+    height: 322px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+/* 1,5 */
+.item:first-of-type,.item:nth-of-type(5){
+    margin: 20px 0px 0px;
+}
+
+/*down_page*/
+.bog{
+    width: 350px;
+    height: 262px;
+    background-color: rgb(149, 149, 149);
+    float: left;
+    margin-top: 81px;
+    margin-right: 30px;
+}
+.bog:last-of-type{
+    margin: 81px 0px 0px;
+}
+.bog p{
+    font-size: 14px;
+    font-family: "Myriad Pro Regular";
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #555252;
+    text-align: justify;
+}
+
+/* buttons */
+.item>a:first-of-type{
+    width: 201px;
+    height: 40px;
+    float: left;
+    background-color: #323232;
+    color: white;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    font-family: "Roboto Black";
+    text-transform: uppercase;
+    padding: 5px 0 0;
+    border: none;
+    cursor: default;
+    text-align: center;
+    margin-top: -3.5px;
+}
+.item>a:hover{
+    background-color: #1abc9c;
+}
+.item>a:focus{
+    background-color: #1abc9c;
+}
+.item>a:last-of-type{
+    width: 54px;
+    height: 40px;
+    float: right;
+    background-color: #8c8c8c;
+    color: white;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    font-family: "Roboto Black";
+    text-transform: uppercase;
+    padding: 5px 0 0;
+    border: none;
+    cursor: default;
+    text-align: center;
+    margin-top: -3.5px;
+}
+.item>a:last-of-type:hover{
+    background-color: #7fd9c7;
+}
+.item>a:last-of-type:focus{
+    background-color: #7fd9c7;
+}
+.bog>a{
+    width: 160px;
+    height: 51px;
+    font-family: "Open Sans Light";
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    border-radius: 3px;
+    text-align: center;
+    padding: 13px 0 0 2px;
+    text-transform: none;
+    color: white;
+    background-color: rgb(78, 198, 171);
+    box-sizing: border-box;
+    margin-top: 16px;
+}
+.bog>a:hover{
+    background-color: #7fd9c7;
+}
+.bog>a:focus{
+    background-color: #7fd9c7;
+}
